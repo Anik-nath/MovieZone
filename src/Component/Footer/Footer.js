@@ -40,10 +40,23 @@ const Footer = () => {
           </div>
           <div className="col-lg-4 col-md-4 col-12">
             <h5 className="pb-3">Newsletter</h5>
-            <p className="text-white-50">Subscribe our news letter system now to get lettest movie news from us.</p>
-            <input className="bg-transparent border border-secondary text-white-50 rounded px-3 py-1" type="email" placeholder="Enter email" />
+            <p className="text-white-50">
+              Subscribe our news letter system now to get lettest movie news
+              from us.
+            </p>
+            <input
+              className="bg-transparent border border-secondary text-white-50 rounded px-3 py-1"
+              type="email"
+              placeholder="Enter email"
+            />
             <div className="pt-3 fs-5">
-            <a className={style.textcolor} style={{textDecoration:"none"}} href="#!">Subscribe Now </a>
+              <a
+                className={style.textcolor}
+                style={{ textDecoration: "none" }}
+                href="#!"
+              >
+                Subscribe Now{" "}
+              </a>
             </div>
           </div>
         </div>
@@ -53,7 +66,8 @@ const Footer = () => {
             <small className="text-white-50">
               {" "}
               &copy; Copywrite 2021{" "}
-              <span className="text-light">MovieZone.com</span>. Design by Anik Nath{" "}
+              <span className="text-light">MovieZone.com</span>. Design by Anik
+              Nath{" "}
             </small>
           </div>
         </div>
