@@ -11,7 +11,7 @@ const Home = () => {
           directory, and movie promotion websites.
         </p>
         <button className={style.button}>
-          <i class="fas fa-play-circle me-2 py-2"></i>
+          <i className="fas fa-play-circle me-2 py-2"></i>
           Playlist
         </button>
       </div>

@@ -11,12 +11,12 @@ const Footer = () => {
               movieZone
             </h5>
             <p className="text-white-50 py-2">
-              <i class="fas fa-map-marker-alt me-2 pt-2"></i>
+              <i className="fas fa-map-marker-alt me-2 pt-2"></i>
               5th Floor, XYZ Tower Sitakunda
               <br /> Chittagong, Bangladesh.
             </p>
             <p className="text-white py-3">
-              <i class="fas fa-phone me-2 py-2"></i>
+              <i className="fas fa-phone me-2 py-2"></i>
               Call Us: (+880) 175 472 234548
             </p>
           </div>
