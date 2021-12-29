@@ -1,0 +1,9 @@
+.textcolor{
+    color: rgb(243, 6, 85);
+}
+.footerbackground{
+    background: linear-gradient(rgba(6, 27, 41, 0.705),rgba(0, 0, 7, 0.719)), url('../images/footerbanner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
