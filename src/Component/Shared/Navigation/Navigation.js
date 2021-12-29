@@ -6,7 +6,7 @@ import logo from "../../../images/movieZoneLogo.png";
 const Navigation = () => {
   return (
     <div>
-      <Navbar fixed="top" className="py-3" collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar fixed="top" className="py-3" collapseOnSelect expand="lg" bg="black" variant="dark">
         <Container>
           <Navbar.Brand as={HashLink} to="/home">
             <img

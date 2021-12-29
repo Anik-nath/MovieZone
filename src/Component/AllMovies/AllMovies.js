@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Form } from "react-bootstrap";
 import MovieCard from "../Shared/MovieCard/MovieCard";
 
 const AllMovies = () => {
@@ -12,12 +13,31 @@ const AllMovies = () => {
       .then((data) => setMovies(data.results));
   }, []);
   return (
-    <div className="py-5 mt-5">
+    <div style={{ background: "rgba(0, 1, 10, 0.96)" }} className="py-5 mt-5">
       <div className="container">
-          <h1>All Movies</h1>
+        <div className="pt-5 d-flex">
+          <select className="bg-dark text-white py-2 border-0 me-1 px-5">
+            <option>TV Shows</option>
+            <option>Movies</option>
+            <option>Musics</option>
+            <option>Drama</option>
+          </select>
+          <input
+            className="w-100 bg-dark text-white py-2 border-0 px-3"
+            type="text"
+            placeholder="Search for more movies"
+          />
+        </div>
+        <div className="d-flex justify-content-end align-items-center text-white py-4 gap-4">
+          <span>Follow Us :</span>
+          <i className="fab fa-facebook-f"></i>
+          <i className="fab fa-twitter"></i>
+          <i className="fab fa-instagram"></i>
+          <i className="fab fa-youtube"></i>
+        </div>
       </div>
       <div className="container">
-        <div className="row row-cols-lg-4 row-cols-md-3 row-cols-12 g-3">
+        <div className="row row-cols-lg-4 row-cols-md-3 row-cols-12 g-4">
           {movies.map((movie) => (
             <MovieCard key={movie.id} movie={movie}></MovieCard>
           ))}

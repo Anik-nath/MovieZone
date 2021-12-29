@@ -12,14 +12,14 @@ const MovieCard = (props) => {
   } = props.movie;
   return (
     <div>
-      <Card>
+      <Card className="border-0 shadow-lg">
         <Card.Img
           className="position-relative"
           variant="top"
           src={`http://image.tmdb.org/t/p/w500${poster_path}`}
         />
         <div
-          style={{ background: "rgba(0, 0, 50, 0.50)" }}
+          style={{ background: "rgba(0, 0, 50, 0.40)" }}
           className="position-absolute h-100 w-100"
         ></div>
         <Card.Body className="position-absolute text-light bottom-0">
