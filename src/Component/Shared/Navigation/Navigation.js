@@ -26,6 +26,18 @@ const Navigation = () => {
               <Nav.Link as={HashLink} to="/allmovies">
                 Movies
               </Nav.Link>
+              <Nav.Link as={HashLink} to="/tvshows">
+                Tv Shows
+              </Nav.Link>
+              <Nav.Link as={HashLink} to="/blog">
+                Blog
+              </Nav.Link>
+            </Nav>
+            <Nav>
+            <Nav.Link href="#deets">Login</Nav.Link>
+            <Nav.Link eventKey={2} href="#memes">
+                Sign up
+            </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
