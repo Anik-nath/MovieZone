@@ -21,8 +21,9 @@
     border-radius: 25px;
     background: linear-gradient(to right,rgb(122, 20, 255),rgb(243, 6, 85)) ;
     color: #fff;
-    transition: all 2s;
+    transition: 0.3s;
 }
 .button:hover{
     background: linear-gradient(to right,rgb(243, 6, 85),rgb(122, 20, 255)) ;
 }
+

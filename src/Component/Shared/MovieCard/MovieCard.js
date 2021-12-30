@@ -1,18 +1,19 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const MovieCard = (props) => {
   const {
+    id,
     original_title,
-    overview,
     vote_average,
     release_date,
     poster_path,
-    backdrop_path,
   } = props.movie;
   return (
     <div>
-      <Card className="border-0 shadow-lg">
+     <Link style={{textDecoration:"none"}} to={`/moviedetails/${id}`}>
+     <Card className="border-0 shadow-lg">
         <Card.Img
           className="position-relative"
           variant="top"
@@ -30,10 +31,10 @@ const MovieCard = (props) => {
               <span>{vote_average}</span> / <sub>10</sub>
             </h6>
             <span className="fs-6">Release: {release_date}</span>
-            <span></span>
           </Card.Text>
         </Card.Body>
       </Card>
+     </Link>
     </div>
   );
 };
