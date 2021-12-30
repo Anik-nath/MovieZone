@@ -1,29 +1,29 @@
-.textcolor{
-    color: rgb(243, 6, 85);
+.textcolor {
+  color: rgb(243, 6, 85);
 }
-.footerbackground{
-    background: linear-gradient(rgba(6, 27, 41, 0.705),rgba(0, 0, 7, 0.719)), url('../images/footerbanner.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.footerbackground {
+  background: linear-gradient(rgba(6, 27, 41, 0.705), rgba(0, 0, 7, 0.719)),
+    url("../images/footerbanner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.banner{
-    height: 90vh;
-    background: url('../images/image3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.banner {
+  height: 90vh;
+  background: url("../images/image6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.button{
-    outline: none;
-    border: none;
-    padding: 8px 28px;
-    border-radius: 25px;
-    background: linear-gradient(to right,rgb(122, 20, 255),rgb(243, 6, 85)) ;
-    color: #fff;
-    transition: 0.3s;
+.button {
+  outline: none;
+  border: none;
+  padding: 8px 28px;
+  border-radius: 25px;
+  background: linear-gradient(to right, rgb(122, 20, 255), rgb(243, 6, 85));
+  color: #fff;
+  transition: 0.3s;
 }
-.button:hover{
-    background: linear-gradient(to right,rgb(243, 6, 85),rgb(122, 20, 255)) ;
+.button:hover {
+  background: linear-gradient(to right, rgb(243, 6, 85), rgb(122, 20, 255));
 }
-

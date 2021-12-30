@@ -6,7 +6,14 @@ import logo from "../../../images/movieZoneLogo.png";
 const Navigation = () => {
   return (
     <div>
-      <Navbar fixed="top" className="py-3" collapseOnSelect expand="lg" bg="black" variant="dark">
+      <Navbar
+        fixed="top"
+        className="py-3"
+        collapseOnSelect
+        expand="lg"
+        bg="black"
+        variant="dark"
+      >
         <Container>
           <Navbar.Brand as={HashLink} to="/home">
             <img
@@ -26,18 +33,18 @@ const Navigation = () => {
               <Nav.Link as={HashLink} to="/allmovies">
                 Movies
               </Nav.Link>
-              <Nav.Link as={HashLink} to="/tvshows">
+              <Nav.Link as={HashLink} to="/">
                 Tv Shows
               </Nav.Link>
-              <Nav.Link as={HashLink} to="/blog">
+              <Nav.Link as={HashLink} to="/">
                 Blog
               </Nav.Link>
             </Nav>
             <Nav>
-            <Nav.Link href="#deets">Login</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
+              <Nav.Link href="#">Login</Nav.Link>
+              <Nav.Link eventKey={2} href="#">
                 Sign up
-            </Nav.Link>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

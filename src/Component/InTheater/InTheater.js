@@ -26,7 +26,7 @@ const InTheater = () => {
         </div>
       ) : (
         <div className="row row-cols-lg-4 row-cols-md-3 row-cols-12 g-4">
-          {movies.slice(8,12).map((movie) => (
+          {movies.slice(8, 12).map((movie) => (
             <MovieCard key={movie.id} movie={movie}></MovieCard>
           ))}
         </div>

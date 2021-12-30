@@ -69,10 +69,10 @@ const AllMovies = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="d-flex justify-content-center mt-5">
+            <div className="d-flex justify-content-center mt-5 overflow-hidden">
               <ReactPaginate
-                nextLabel={"next"}
-                previousLabel={"previous"}
+                nextLabel={"Next"}
+                previousLabel={"Previous"}
                 breakLabel="..."
                 pageCount={20}
                 pageRangeDisplayed={3}
