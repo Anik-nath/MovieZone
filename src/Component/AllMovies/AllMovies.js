@@ -16,9 +16,7 @@ const AllMovies = () => {
       });
   }, []);
 
-  console.log(movies);
-
-  const fetchComments = async (currentPage) => {
+  const fetchMovies = async (currentPage) => {
     const res = await fetch(
       `https://api.themoviedb.org/3/movie/popular?api_key=4fbde326a784030d0a948a46706dec39&language=en-US&page=${currentPage}`
     );
@@ -26,10 +24,9 @@ const AllMovies = () => {
     return data;
   };
   const handlePageClick = async (data) => {
-    console.log(data.selected);
     let currentPage = data.selected + 1;
-    const commentsFormServer = await fetchComments(currentPage);
-    setMovies(commentsFormServer.results);
+    const moviesFromServer = await fetchMovies(currentPage);
+    setMovies(moviesFromServer.results);
   };
 
   return (

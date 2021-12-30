@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Spinner } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import MovieCard from "../Shared/MovieCard/MovieCard";
-import style from "../../CSS/style.module.css";
 const InTheater = () => {
   const [movies, setMovies] = useState([]);
   const [isloading, setIsLoading] = useState(true);
@@ -19,8 +17,8 @@ const InTheater = () => {
   }, []);
   return (
     <div className="py-5">
-      <h3 className="display-6 text-light text-center my-5">
-        Movies In Theater
+      <h3 className="display-6 text-light text-center my-5 text-uppercase">
+        In Theater
       </h3>
       {isloading ? (
         <div className="text-center">
@@ -33,11 +31,6 @@ const InTheater = () => {
           ))}
         </div>
       )}
-      <div className="text-center mt-5">
-        <Link to="/allmovies">
-          <button className={style.button}>Movies List</button>
-        </Link>
-      </div>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import style from "../../CSS/style.module.css";
 import InTheater from "../InTheater/InTheater";
+import OnTvs from "../OnTvs/OnTvs";
 
 const Home = () => {
   return (
@@ -21,7 +22,9 @@ const Home = () => {
       {/* in theater */}
       <div className="container">
         <InTheater></InTheater>
+        <OnTvs></OnTvs>
       </div>
+     
     </div>
   );
 };
